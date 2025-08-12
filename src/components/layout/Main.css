@@ -69,6 +69,13 @@ button:hover {
   padding: 26px;
 }
 
+.hero-background {
+  background-image: url("/assets/images/Hero.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 /* Media Queries */
 
 /* 2xl */
