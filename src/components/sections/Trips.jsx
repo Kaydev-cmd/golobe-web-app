@@ -1,0 +1,56 @@
+import React from "react";
+import { FLIGHTS_AND_HOTELS_DATA, TRIPS_CARD_DATA } from "../../constants";
+import TripsCard from "../common/TripsCard";
+import FlightsAndHotelsCard from "../common/FlightsAndHotelsCard";
+
+const Trips = () => {
+  return (
+    <section className="container">
+      <div className="flex flex-col justify-center gap-4">
+        <div
+          className="flex flex-col gap-2 text-center"
+          style={{ marginBottom: "22px" }}
+        >
+          <h1 className="font-bold text-2xl">Plan your perfect trip</h1>
+          <p className="text-slate-500">
+            Search Flights & Places Hire to our most popular destinations.
+          </p>
+        </div>
+        <button
+          className="hidden border border-green-600"
+          style={{ borderRadius: "6px" }}
+        >
+          See more places
+        </button>
+      </div>
+
+      <div className="grid grid-cols-1 gap-4">
+        {TRIPS_CARD_DATA.map((trip) => (
+          <TripsCard key={trip.title} img={trip.image} title={trip.title} />
+        ))}
+        <button
+          className="border border-green-600"
+          style={{ borderRadius: "8px", margin: "20px 0" }}
+        >
+          See more places
+        </button>
+      </div>
+
+      <div className="grid grid-cols-1 gap-4">
+        {FLIGHTS_AND_HOTELS_DATA.map((card) => (
+          <div
+            key={card.title}
+            className="card bg-center bg-no-repeat bg-cover rounded-lg"
+            style={{
+              backgroundImage: `url(${card.backgroundImage})`,
+            }}
+          >
+            <FlightsAndHotelsCard title={card.title} description={card.description}/>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default Trips;
