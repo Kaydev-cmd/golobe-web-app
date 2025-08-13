@@ -1,7 +1,12 @@
 import React from "react";
+import Trips from "../../components/sections/Trips";
 
 const Home = () => {
-  return <div className="text-blue-600">Home</div>;
+  return (
+    <>
+      <Trips />
+    </>
+  );
 };
 
 export default Home;
