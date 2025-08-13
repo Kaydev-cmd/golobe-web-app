@@ -57,8 +57,7 @@ button {
   padding: 12px 32px;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  color: #fff;
-  border-radius: 100px;
+  border-radius: 8px;
 }
 
 button:hover {
