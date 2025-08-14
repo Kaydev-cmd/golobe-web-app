@@ -3,7 +3,7 @@ import Button from "../Button";
 import { DESKTOP_LINKS, NAV_LINKS } from "../../../constants";
 import { Link } from "react-router-dom";
 import { BiMenuAltRight } from "react-icons/bi";
-import Hero from "../Hero";
+import Hero from "../../sections/Hero";
 
 const Header = () => {
   const [nav, setNav] = useState(false);
