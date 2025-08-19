@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { FLIGHTS_AND_HOTELS_DATA, TRIPS_CARD_DATA } from "../../constants";
 import TripsCard from "../common/TripsCard";
 import FlightsAndHotelsCard from "../common/FlightsAndHotelsCard";
 import Button from "../common/Button";
+import { useNavigate } from "react-router-dom";
 
 const Trips = () => {
+  const navigate = useNavigate();
+
   return (
     <section className="container">
       <div className="flex flex-col justify-center gap-4">
@@ -24,7 +27,12 @@ const Trips = () => {
 
       <div className="grid grid-cols-1 gap-4">
         {TRIPS_CARD_DATA.map((trip) => (
-          <TripsCard key={trip.title} img={trip.image} title={trip.title} />
+          <TripsCard
+            key={trip.id}
+            img={trip.image}
+            title={trip.title}
+            onClick={() => navigate(`/place/${trip.id}`)}
+          />
         ))}
         <Button title="See more places" variant="secondary" />
       </div>

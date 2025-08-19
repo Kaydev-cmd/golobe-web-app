@@ -1,12 +1,12 @@
 export const NAV_LINKS = [
   {
     name: "Find Flights",
-    href: "/find-flights",
+    href: "/flights",
     icon: "/assets/logos/airplane.png",
   },
   {
     name: "Find Stays",
-    href: "/find-stays",
+    href: "/stays",
     icon: "/assets/logos/ion_bed.png",
   },
   {
@@ -36,38 +36,47 @@ export const DESKTOP_LINKS = [
 
 export const TRIPS_CARD_DATA = [
   {
+    id: 1,
     image: "/assets/images/Istanbul.png",
     title: "Istanbul, Turkey",
   },
   {
+    id: 2,
     image: "/assets/images/Sydney.png",
     title: "Sydney, Australia",
   },
   {
+    id: 3,
     image: "/assets/images/Baku.png",
     title: "Baku, Azerbaijan",
   },
   {
+    id: 4,
     image: "/assets/images/Maldives.png",
     title: "Male, Maledives",
   },
   {
+    id: 5,
     image: "/assets/images/Paris.png",
     title: "Paris, France",
   },
   {
+    id: 6,
     image: "/assets/images/NewYork.png",
     title: "New York, US",
   },
   {
+    id: 7,
     image: "/assets/images/London.png",
     title: "London, UK",
   },
   {
+    id: 8,
     image: "/assets/images/Tokyo.png",
     title: "Tokyo, Japan",
   },
   {
+    id: 9,
     image: "/assets/images/Dubai.png",
     title: "Dubai, UAE",
   },
