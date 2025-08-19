@@ -34,6 +34,101 @@ export const DESKTOP_LINKS = [
   },
 ];
 
+export const OUR_DESTINATION_LINKS = [
+  {
+    id: 1,
+    link: "Canada",
+    href: "#",
+  },
+  {
+    id: 2,
+    link: "Alaska",
+    href: "#",
+  },
+  {
+    id: 3,
+    link: "France",
+    href: "#",
+  },
+  {
+    id: 4,
+    link: "Iceland",
+    href: "#",
+  },
+];
+
+export const OUR_ACTIVITIES_LINKS = [
+  {
+    id: 1,
+    link: "Northern Lights",
+    href: "#",
+  },
+  {
+    id: 2,
+    link: "Cruising & Sailing",
+    href: "#",
+  },
+  {
+    id: 3,
+    link: "Multi-activities",
+    href: "#",
+  },
+  {
+    id: 4,
+    link: "Kayaing",
+    href: "#",
+  },
+];
+
+export const TRAVEL_BLOGS_LINKS = [
+  {
+    id: 1,
+    link: "Bali Travel Guide",
+    href: "#",
+  },
+  {
+    id: 2,
+    link: "Sri Lanks Travel Guide",
+    href: "#",
+  },
+  {
+    id: 3,
+    link: "Peru Travel Guide",
+    href: "#",
+  },
+  {
+    id: 4,
+    link: "Bali Travel Guide",
+    href: "#",
+  },
+];
+
+export const ABOUT_US_LINKS = [
+  {
+    id: 1,
+    link: "Our Story",
+    href: "#",
+  },
+  {
+    id: 2,
+    link: "Work with us",
+    href: "#",
+  },
+];
+
+export const CONTACT_US_LINKS = [
+  {
+    id: 1,
+    link: "Our Story",
+    href: "#",
+  },
+  {
+    id: 2,
+    link: "Work with us",
+    href: "#",
+  },
+];
+
 export const TRIPS_CARD_DATA = [
   {
     id: 1,
