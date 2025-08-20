@@ -39,7 +39,13 @@ const PlaceDetail = () => {
       <div className="flex flex-col gap-4">
         <h1 className="text-3xl font-semibold">{place.title}</h1>
         {place.image && (
-          <img src={place.image} alt={place.title} className="w-full" />
+          <div>
+            <img
+              src={place.image}
+              alt={place.title}
+              className="w-full lg:w-1/2 rounded-lg"
+            />
+          </div>
         )}
         <p className="text-lg">{place.summary}</p>
       </div>
