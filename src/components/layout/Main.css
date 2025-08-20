@@ -69,10 +69,11 @@ button:hover {
 }
 
 .hero-background {
-  background-image: url("/assets/images/Hero.png");
+  background-image: url("/assets/images/Hero_2.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 50vh;
 }
 
 /* Media Queries */
