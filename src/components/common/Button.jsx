@@ -5,7 +5,7 @@ const Button = ({ title, variant = "primary", onClick }) => {
     <button
       className={`${
         variant === "primary" ? "bg-green-500 text-white" : "border border-green-600"
-      }`}
+      } cursor-pointer`}
       onClick={onClick}
     >
       {title}
