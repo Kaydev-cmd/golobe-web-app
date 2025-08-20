@@ -4,8 +4,11 @@ import { DESKTOP_LINKS, NAV_LINKS } from "../../../constants";
 import { Link } from "react-router-dom";
 import { BiMenuAltRight } from "react-icons/bi";
 import Hero from "../../sections/Hero";
+import { useNavigate } from "react-router-dom";
 
 const Header = () => {
+  const navigate = useNavigate();
+
   const [nav, setNav] = useState(false);
 
   const handleNav = () => setNav(!nav);
@@ -14,15 +17,17 @@ const Header = () => {
     <div className="hero-background">
       <header className="container flex justify-between items-center text-white">
         {/* Desktop Links */}
-        <nav className="hidden">
-          <ul className="flex flex-col gap-6">
+        <nav className="hidden md:flex">
+          <ul className="flex gap-6">
             {DESKTOP_LINKS.map((link) => (
-              <li key={link.href}>
-                <Link to={link.href} className="flex items-center gap-2">
-                  <img src={link.icon} alt={link.name} width={22} height={22} />{" "}
-                  {link.name}
-                </Link>
-              </li>
+              <Link
+                key={link.href}
+                to={link.href}
+                className="flex items-center gap-2 cursor-pointer"
+              >
+                <img src={link.icon} alt={link.name} width={22} height={22} />{" "}
+                {link.name}
+              </Link>
             ))}
           </ul>
         </nav>
@@ -49,12 +54,16 @@ const Header = () => {
           <h1 className="text-xl font-bold lowercase">Golobe</h1>
         </Link>
 
-        <div className="hidden">
-          <Button title="Login" />
-          <Button title="Sign Up" />
+        <div className="hidden md:flex gap-4">
+          <Button
+            title="Login"
+            variant="secondary"
+            onClick={() => navigate("/login")}
+          />
+          <Button title="Sign Up" onClick={() => navigate("/sign-up")} />
         </div>
 
-        <BiMenuAltRight size={40} onClick={handleNav} />
+        <BiMenuAltRight size={40} onClick={handleNav} className="md:hidden" />
       </header>
       <Hero />
     </div>
