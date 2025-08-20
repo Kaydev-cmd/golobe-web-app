@@ -3,54 +3,54 @@
     "id": 1,
     "title": "Istanbul, Turkey",
     "summary": "A vibrant city where East meets West, famous for its rich history, bustling bazaars, and stunning landmarks like the Hagia Sophia and Bosphorus.",
-    "image": "/assets/images/Istanbul.png"
+    "image": "/assets/images/Istanbul.jpg"
   },
   {
     "id": 2,
     "title": "Sydney, Australia",
     "summary": "A modern coastal city known for the Sydney Opera House, Harbour Bridge, and its beautiful beaches like Bondi and Manly.",
-    "image": "/assets/images/Sydney.png"
+    "image": "/assets/images/Sydney.jpg"
   },
   {
     "id": 3,
     "title": "Baku, Azerbaijan",
     "summary": "A blend of ancient architecture and futuristic skyscrapers, with highlights like the Flame Towers and the historic Old City.",
-    "image": "/assets/images/Baku.png"
+    "image": "/assets/images/Baku.jpg"
   },
   {
     "id": 4,
     "title": "Male, Maldives",
     "summary": "The capital of the Maldives, known for its colorful buildings, lively markets, and gateway to world-famous island resorts.",
-    "image": "/assets/images/Maldives.png"
+    "image": "/assets/images/Maldives.jpg"
   },
   {
     "id": 5,
     "title": "Paris, France",
     "summary": "The City of Light, celebrated for its art, fashion, romantic atmosphere, and iconic landmarks like the Eiffel Tower and Louvre Museum.",
-    "image": "/assets/images/Paris.png"
+    "image": "/assets/images/Paris.jpg"
   },
   {
     "id": 6,
     "title": "New York, US",
     "summary": "A global hub of culture, business, and entertainment, featuring Times Square, Central Park, Broadway, and the Statue of Liberty.",
-    "image": "/assets/images/NewYork.png"
+    "image": "/assets/images/NewYork.jpg"
   },
   {
     "id": 7,
     "title": "London, UK",
     "summary": "A historic yet modern city known for Buckingham Palace, the River Thames, world-class museums, and its diverse culture.",
-    "image": "/assets/images/London.png"
+    "image": "/assets/images/London.jpg"
   },
   {
     "id": 8,
     "title": "Tokyo, Japan",
     "summary": "A dynamic metropolis blending tradition and innovation, with highlights like Shibuya Crossing, ancient temples, and sushi culture.",
-    "image": "/assets/images/Tokyo.png"
+    "image": "/assets/images/Tokyo.jpg"
   },
   {
     "id": 9,
     "title": "Dubai, UAE",
     "summary": "A futuristic desert city famous for luxury shopping, ultramodern architecture like Burj Khalifa, and vibrant nightlife.",
-    "image": "/assets/images/Dubai.png"
+    "image": "/assets/images/Dubai.jpg"
   }
 ]
