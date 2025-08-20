@@ -24,12 +24,12 @@ export const NAV_LINKS = [
 export const DESKTOP_LINKS = [
   {
     name: "Find Flights",
-    href: "/find-flights",
+    href: "/flights",
     icon: "/assets/logos/airplane.png",
   },
   {
     name: "Find Stays",
-    href: "/find-stays",
+    href: "/stays",
     icon: "/assets/logos/ion_bed.png",
   },
 ];
@@ -132,58 +132,61 @@ export const CONTACT_US_LINKS = [
 export const TRIPS_CARD_DATA = [
   {
     id: 1,
-    image: "/assets/images/Istanbul.png",
+    image: "/assets/images/Istanbul.jpg",
     title: "Istanbul, Turkey",
   },
   {
     id: 2,
-    image: "/assets/images/Sydney.png",
+    image: "/assets/images/Sydney.jpg",
     title: "Sydney, Australia",
   },
   {
     id: 3,
-    image: "/assets/images/Baku.png",
+    image: "/assets/images/Baku.jpg",
     title: "Baku, Azerbaijan",
   },
   {
     id: 4,
-    image: "/assets/images/Maldives.png",
+    image: "/assets/images/Maldives.jpg",
     title: "Male, Maledives",
   },
   {
     id: 5,
-    image: "/assets/images/Paris.png",
+    image: "/assets/images/Paris.jpg",
     title: "Paris, France",
   },
   {
     id: 6,
-    image: "/assets/images/NewYork.png",
+    image: "/assets/images/NewYork.jpg",
     title: "New York, US",
   },
   {
     id: 7,
-    image: "/assets/images/London.png",
+    image: "/assets/images/London.jpg",
     title: "London, UK",
   },
   {
     id: 8,
-    image: "/assets/images/Tokyo.png",
+    image: "/assets/images/Tokyo.jpg",
     title: "Tokyo, Japan",
   },
   {
     id: 9,
-    image: "/assets/images/Dubai.png",
+    image: "/assets/images/Dubai.jpg",
     title: "Dubai, UAE",
   },
 ];
 
-export const FLIGHTS_AND_HOTELS_DATA = [
+export const FLIGHTS_DATA = [
   {
     backgroundImage: "/assets/images/cardBackground_1.png",
     title: "Flights",
     description:
       "Book domestic and international flights at competitive prices with flexible scheduling options.",
   },
+];
+
+export const HOTELS_DATA = [
   {
     backgroundImage: "/assets/images/cardBackground_2.png",
     title: "Hotels",
