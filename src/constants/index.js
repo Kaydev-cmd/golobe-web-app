@@ -221,3 +221,53 @@ export const REVIEWS_CARD_DATA = [
     image: "/assets/images/Review_3.png",
   },
 ];
+
+export const FALL_INTO_TRAVEL_DATA = [
+  {
+    id: 1,
+    backgroundImage: "/assets/images/cardBackground_3.png",
+    title: "Melbourne",
+    description: "An amazing journey.",
+    price: "$700",
+  },
+  {
+    id: 2,
+    backgroundImage: "/assets/images/cardBackground_4.png",
+    title: "Paris",
+    description: "A Paris Adventure.",
+    price: "$600",
+  },
+  {
+    id: 3,
+    backgroundImage: "/assets/images/cardBackground_5.png",
+    title: "London",
+    description: "London eye adventure.",
+    price: "$350",
+  },
+  {
+    id: 4,
+    backgroundImage: "/assets/images/cardBackground_6.png",
+    title: "Columbia",
+    description: "Amazing streets.",
+    price: "$700",
+  },
+];
+
+export const GALLERY_IMAGES = [
+  {
+    image: "/assets/images/gallery1.png",
+    alt: "Gallery Image 1",
+  },
+  {
+    image: "/assets/images/gallery2.png",
+    alt: "Gallery Image 2",
+  },
+  {
+    image: "/assets/images/gallery3.png",
+    alt: "Gallery Image 3",
+  },
+  {
+    image: "/assets/images/gallery4.png",
+    alt: "Gallery Image 4",
+  },
+];
