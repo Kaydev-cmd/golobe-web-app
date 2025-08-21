@@ -6,6 +6,7 @@ import Stays from "../pages/stays/Stays";
 import Login from "../pages/login/Login";
 import SignUp from "../pages/signup/SignUp";
 import PlaceDetail from "../components/common/PlaceDetail";
+import FlightListing from "../pages/flight-listing/FlightListing";
 
 const Router = createBrowserRouter([
   {
@@ -35,6 +36,10 @@ const Router = createBrowserRouter([
       {
         path: "/place/:id",
         element: <PlaceDetail />,
+      },
+      {
+        path: "/flight-listing",
+        element: <FlightListing />,
       },
     ],
   },
