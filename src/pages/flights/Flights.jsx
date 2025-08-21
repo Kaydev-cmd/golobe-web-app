@@ -1,7 +1,14 @@
 import React from "react";
+import Places from "../../components/sections/Places";
+import FallIntoTravel from "../../components/sections/FallIntoTravel";
 
 const Flights = () => {
-  return <div>Flights</div>;
+  return (
+    <>
+      <Places />
+      <FallIntoTravel />
+    </>
+  );
 };
 
 export default Flights;
