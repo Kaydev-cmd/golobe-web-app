@@ -7,6 +7,7 @@ import Login from "../pages/login/Login";
 import SignUp from "../pages/signup/SignUp";
 import PlaceDetail from "../components/common/PlaceDetail";
 import FlightListing from "../pages/flight-listing/FlightListing";
+import FlightDetails from "../components/common/FlightDetails";
 
 const Router = createBrowserRouter([
   {
@@ -40,6 +41,10 @@ const Router = createBrowserRouter([
       {
         path: "/flight-listing",
         element: <FlightListing />,
+      },
+      {
+        path: "/flight/:id",
+        element: <FlightDetails />,
       },
     ],
   },
