@@ -25,12 +25,12 @@ export const DESKTOP_LINKS = [
   {
     name: "Find Flights",
     href: "/flights",
-    icon: "/assets/logos/airplane.png",
+    icon: "/assets/logos/airplane_black.png",
   },
   {
     name: "Find Stays",
     href: "/stays",
-    icon: "/assets/logos/ion_bed.png",
+    icon: "/assets/logos/bed_black.png",
   },
 ];
 
@@ -269,5 +269,45 @@ export const GALLERY_IMAGES = [
   {
     image: "/assets/images/gallery4.png",
     alt: "Gallery Image 4",
+  },
+];
+
+export const FLIGHT_LISITING_DATA = [
+  {
+    image: "/assets/images/emirates.png",
+    alt: "Emirates",
+    rating: 4.2,
+    reviews: 54,
+    price: 104,
+    time: "12:00 pm - 01:28pm",
+    from: "EWR",
+    to: "BNA",
+  },
+  {
+    image: "/assets/images/etihad.png",
+    rating: 4.5,
+    reviews: 30,
+    price: 120,
+    time: "02:00 pm - 04:28pm",
+    from: "EWR",
+    to: "BNA",
+  },
+  {
+    image: "/assets/images/qatar.png",
+    rating: 4.0,
+    reviews: 20,
+    price: 150,
+    time: "06:00 pm - 08:28pm",
+    from: "EWR",
+    to: "BNA",
+  },
+  {
+    image: "/assets/images/emirates.png",
+    rating: 4.8,
+    reviews: 80,
+    price: 200,
+    time: "09:00 pm - 11:28pm",
+    from: "EWR",
+    to: "BNA",
   },
 ];
