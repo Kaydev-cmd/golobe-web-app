@@ -3,7 +3,7 @@ import React from "react";
 const Hero = () => {
   return (
     <section
-      className="flex flex-col justify-center items-center text-white gap-4"
+      className="hero-background flex flex-col justify-center items-center text-white gap-4"
       style={{ paddingTop: "0" }}
     >
       <p className="font-semibold text-3xl">Helping Others</p>
