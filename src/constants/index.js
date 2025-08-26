@@ -132,48 +132,66 @@ export const CONTACT_US_LINKS = [
 export const TRIPS_CARD_DATA = [
   {
     id: 1,
-    image: "/assets/images/Istanbul.jpg",
     title: "Istanbul, Turkey",
+    summary:
+      "A vibrant city where East meets West, famous for its rich history, bustling bazaars, and stunning landmarks like the Hagia Sophia and Bosphorus.",
+    image: "/assets/images/Istanbul.jpg",
   },
   {
     id: 2,
-    image: "/assets/images/Sydney.jpg",
     title: "Sydney, Australia",
+    summary:
+      "A modern coastal city known for the Sydney Opera House, Harbour Bridge, and its beautiful beaches like Bondi and Manly.",
+    image: "/assets/images/Sydney.jpg",
   },
   {
     id: 3,
-    image: "/assets/images/Baku.jpg",
     title: "Baku, Azerbaijan",
+    summary:
+      "A blend of ancient architecture and futuristic skyscrapers, with highlights like the Flame Towers and the historic Old City.",
+    image: "/assets/images/Baku.jpg",
   },
   {
     id: 4,
+    title: "Male, Maldives",
+    summary:
+      "The capital of the Maldives, known for its colorful buildings, lively markets, and gateway to world-famous island resorts.",
     image: "/assets/images/Maldives.jpg",
-    title: "Male, Maledives",
   },
   {
     id: 5,
-    image: "/assets/images/Paris.jpg",
     title: "Paris, France",
+    summary:
+      "The City of Light, celebrated for its art, fashion, romantic atmosphere, and iconic landmarks like the Eiffel Tower and Louvre Museum.",
+    image: "/assets/images/Paris.jpg",
   },
   {
     id: 6,
-    image: "/assets/images/NewYork.jpg",
     title: "New York, US",
+    summary:
+      "A global hub of culture, business, and entertainment, featuring Times Square, Central Park, Broadway, and the Statue of Liberty.",
+    image: "/assets/images/NewYork.jpg",
   },
   {
     id: 7,
-    image: "/assets/images/London.jpg",
     title: "London, UK",
+    summary:
+      "A historic yet modern city known for Buckingham Palace, the River Thames, world-class museums, and its diverse culture.",
+    image: "/assets/images/London.jpg",
   },
   {
     id: 8,
-    image: "/assets/images/Tokyo.jpg",
     title: "Tokyo, Japan",
+    summary:
+      "A dynamic metropolis blending tradition and innovation, with highlights like Shibuya Crossing, ancient temples, and sushi culture.",
+    image: "/assets/images/Tokyo.jpg",
   },
   {
     id: 9,
-    image: "/assets/images/Dubai.jpg",
     title: "Dubai, UAE",
+    summary:
+      "A futuristic desert city famous for luxury shopping, ultramodern architecture like Burj Khalifa, and vibrant nightlife.",
+    image: "/assets/images/Dubai.jpg",
   },
 ];
 
@@ -272,8 +290,152 @@ export const GALLERY_IMAGES = [
   },
 ];
 
+export const FLIGHT_DETAILS_DATA = [
+  {
+    id: 1,
+    title: "Emirates Flight",
+    location: "Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437",
+    image: "/assets/images/emirates_flight_detail.png",
+    rating: 4.2,
+    reviews: 54,
+    price: 104,
+    gallery: [
+      "/assets/images/flight_gallery_2.png",
+      "/assets/images/flight_gallery_3.png",
+      "/assets/images/flight_gallery_4.png",
+      "/assets/images/flight_gallery_1.png",
+      "/assets/images/flight_gallery_6.png",
+      "/assets/images/flight_gallery_7.png",
+      "/assets/images/flight_gallery_5.png",
+      "/assets/images/flight_gallery_8.png",
+      "/assets/images/flight_gallery_9.png",
+    ],
+  },
+  {
+    id: 2,
+    title: "Etihad Flight",
+    location: "Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437",
+    image: "/assets/images/emirates_flight_detail.png",
+    rating: 4.5,
+    reviews: 30,
+    price: 120,
+    gallery: [
+      "/assets/images/flight_gallery_1.png",
+      "/assets/images/flight_gallery_2.png",
+      "/assets/images/flight_gallery_3.png",
+      "/assets/images/flight_gallery_4.png",
+      "/assets/images/flight_gallery_5.png",
+      "/assets/images/flight_gallery_6.png",
+      "/assets/images/flight_gallery_7.png",
+      "/assets/images/flight_gallery_8.png",
+      "/assets/images/flight_gallery_9.png",
+    ],
+  },
+  {
+    id: 3,
+    title: "Qatar Airways Flight",
+    location: "Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437",
+    image: "/assets/images/emirates_flight_detail.png",
+    rating: 4.0,
+    reviews: 20,
+    price: 150,
+    gallery: [
+      "/assets/images/flight_gallery_1.png",
+      "/assets/images/flight_gallery_2.png",
+      "/assets/images/flight_gallery_3.png",
+      "/assets/images/flight_gallery_4.png",
+      "/assets/images/flight_gallery_5.png",
+      "/assets/images/flight_gallery_6.png",
+      "/assets/images/flight_gallery_7.png",
+      "/assets/images/flight_gallery_8.png",
+      "/assets/images/flight_gallery_9.png",
+    ],
+  },
+  {
+    id: 4,
+    title: "Emirates Flight",
+    location: "Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437",
+    image: "/assets/images/emirates_flight_detail.png",
+    rating: 4.8,
+    reviews: 80,
+    price: 200,
+    gallery: [
+      "/assets/images/flight_gallery_1.png",
+      "/assets/images/flight_gallery_2.png",
+      "/assets/images/flight_gallery_3.png",
+      "/assets/images/flight_gallery_5.png",
+      "/assets/images/flight_gallery_4.png",
+      "/assets/images/flight_gallery_6.png",
+      "/assets/images/flight_gallery_7.png",
+      "/assets/images/flight_gallery_8.png",
+      "/assets/images/flight_gallery_9.png",
+    ],
+  },
+];
+
+export const FLIGHT_DETAILS_CARD_DATA = [
+  {
+    id: 1,
+    returnDate: "Wed, Dec 8",
+    time: "2h 28m",
+    airlineImage: "/assets/images/emirates.png",
+    airlineName: "Emirates",
+    aircraft: "Airbus A320",
+    icons: [
+      "/assets/logos/airplane_black.png",
+      "/assets/logos/Wifi_black.png",
+      "/assets/logos/stopwatch_black.png",
+      "/assets/logos/fast-food_black.png",
+      "/assets/logos/seat_black.png",
+    ],
+    fromTime: "12:00 pm",
+    fromLocation: "Newark(EWR)",
+    toTime: "12:00 pm",
+    toLocation: "Newark(EWR)",
+  },
+  {
+    id: 2,
+    returnDate: "Thu, Dec 9",
+    time: "3h 15m",
+    airlineImage: "/assets/images/etihad.png",
+    airlineName: "Etihad",
+    aircraft: "Boeing 787",
+    icons: [
+      "/assets/logos/airplane_black.png",
+      "/assets/logos/Wifi_black.png",
+      "/assets/logos/stopwatch_black.png",
+      "/assets/logos/fast-food_black.png",
+      "/assets/logos/seat_black.png",
+    ],
+    fromTime: "01:45 pm",
+    fromLocation: "Newark (EWR)",
+    toTime: "05:00 pm",
+    toLocation: "Abu Dhabi (AUH)",
+  },
+  {
+    id: 3,
+    returnDate: "Fri, Dec 10",
+    time: "7h 40m",
+    airlineImage: "/assets/images/qatar.png",
+    airlineName: "Qatar Airways",
+    aircraft: "Airbus A350",
+    icons: [
+      "/assets/logos/airplane_black.png",
+      "/assets/logos/Wifi_black.png",
+      "/assets/logos/stopwatch_black.png",
+      "/assets/logos/fast-food_black.png",
+      "/assets/logos/seat_black.png",
+    ],
+    fromTime: "10:15 pm",
+    fromLocation: "Newark (EWR)",
+    toTime: "05:55 am",
+    toLocation: "Doha (DOH)",
+  },
+];
+
 export const FLIGHT_LISITING_DATA = [
   {
+    id: 1,
     image: "/assets/images/emirates.png",
     alt: "Emirates",
     rating: 4.2,
@@ -284,6 +446,7 @@ export const FLIGHT_LISITING_DATA = [
     to: "BNA",
   },
   {
+    id: 2,
     image: "/assets/images/etihad.png",
     rating: 4.5,
     reviews: 30,
@@ -293,6 +456,7 @@ export const FLIGHT_LISITING_DATA = [
     to: "BNA",
   },
   {
+    id: 3,
     image: "/assets/images/qatar.png",
     rating: 4.0,
     reviews: 20,
@@ -302,6 +466,7 @@ export const FLIGHT_LISITING_DATA = [
     to: "BNA",
   },
   {
+    id: 4,
     image: "/assets/images/emirates.png",
     rating: 4.8,
     reviews: 80,
