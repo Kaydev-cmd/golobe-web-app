@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import Button from "./Button";
 import { useNavigate } from "react-router-dom";
+import { TRIPS_CARD_DATA } from "../../constants";
 
 const PlaceDetail = () => {
   const navigate = useNavigate();
@@ -11,27 +12,16 @@ const PlaceDetail = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("/data.json")
-      .then((res) => {
-        if (!res) {
-          throw new Error("Failed to fetch data");
-        }
-        return res.json();
-      })
-      .then((data) => {
-        const foundPlace = data.find((place) => place.id === parseInt(id, 10));
+    const foundPlace = TRIPS_CARD_DATA.find(
+      (place) => place.id === parseInt(id, 10)
+    );
 
-        if (!foundPlace) {
-          setError("Place not found");
-        } else {
-          setPlace(foundPlace);
-        }
-        setLoading(false);
-      })
-      .catch((err) => {
-        setError(err.message);
-        setLoading(false);
-      });
+    if (!foundPlace) {
+      setError("Flight not found");
+    } else {
+      setPlace(foundPlace);
+    }
+    setLoading(false);
   }, [id]);
 
   if (loading) return <p>Loading...</p>;
