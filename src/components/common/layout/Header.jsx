@@ -3,7 +3,6 @@ import Button from "../Button";
 import { DESKTOP_LINKS, NAV_LINKS } from "../../../constants";
 import { Link } from "react-router-dom";
 import { BiMenuAltRight } from "react-icons/bi";
-import Hero from "../../sections/Hero";
 import { useNavigate } from "react-router-dom";
 
 const Header = () => {
@@ -14,8 +13,8 @@ const Header = () => {
   const handleNav = () => setNav(!nav);
 
   return (
-    <div className="hero-background">
-      <header className="container flex justify-between items-center text-white">
+    <div>
+      <header className="container flex justify-between items-center text-black">
         {/* Desktop Links */}
         <nav className="hidden md:flex">
           <ul className="flex gap-6">
@@ -34,7 +33,7 @@ const Header = () => {
 
         {/* Mobile Links */}
         <nav
-          className={`flex items-center justify-center gap-6 fixed top-20 left-0 w-full bg-green-500 text-white h-67 z-50 ${
+          className={`flex items-center justify-center gap-6 fixed top-17 left-0 w-full bg-green-500 text-white h-67 z-50 ${
             nav ? "flex" : "hidden"
           }`}
         >
@@ -65,7 +64,6 @@ const Header = () => {
 
         <BiMenuAltRight size={40} onClick={handleNav} className="md:hidden" />
       </header>
-      <Hero />
     </div>
   );
 };
