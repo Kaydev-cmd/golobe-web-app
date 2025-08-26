@@ -1,8 +1,10 @@
 import React from "react";
 import Button from "./Button";
 import { CiHeart } from "react-icons/ci";
+import { useNavigate } from "react-router-dom";
 
 const FlightListingCard = ({
+  id,
   image,
   alt,
   rating,
@@ -12,6 +14,8 @@ const FlightListingCard = ({
   from,
   to,
 }) => {
+  const navigate = useNavigate();
+
   return (
     <div className="card flex flex-col bg-white shadow-md rounded-lg">
       <div className="flex justify-center items-center">
@@ -83,7 +87,10 @@ const FlightListingCard = ({
           <CiHeart />
         </div>
         <div>
-          <Button title="View Deals" />
+          <Button
+            title="View Deals"
+            onClick={() => navigate(`/flight/${id}`)}
+          />
         </div>
       </div>
     </div>
