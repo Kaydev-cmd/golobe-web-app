@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import Button from "./Button";
+import { useNavigate } from "react-router-dom";
 
 const PlaceDetail = () => {
+  const navigate = useNavigate();
   const { id } = useParams();
   const [place, setPlace] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -48,6 +51,10 @@ const PlaceDetail = () => {
           </div>
         )}
         <p className="text-lg">{place.summary}</p>
+        <Button
+          title="Book Flight"
+          onClick={() => navigate("/flight-listing")}
+        />
       </div>
     </section>
   );
