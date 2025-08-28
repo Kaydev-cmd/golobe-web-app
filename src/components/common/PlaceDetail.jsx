@@ -32,19 +32,43 @@ const PlaceDetail = () => {
       <div className="flex flex-col gap-4">
         <h1 className="text-3xl font-semibold">{place.title}</h1>
         {place.image && (
-          <div>
+          <div className="flex flex-col lg:flex-row gap-4">
             <img
               src={place.image}
               alt={place.title}
               className="w-full lg:w-1/2 rounded-lg"
             />
+            <div className="hidden lg:grid grid-cols-2 gap-4">
+              <img
+                src={place.image}
+                alt={place.title}
+                className="w-full rounded-lg"
+              />
+              <img
+                src={place.image}
+                alt={place.title}
+                className="w-full rounded-lg"
+              />
+              <img
+                src={place.image}
+                alt={place.title}
+                className="w-full rounded-lg"
+              />
+              <img
+                src={place.image}
+                alt={place.title}
+                className="w-full rounded-lg"
+              />
+            </div>
           </div>
         )}
         <p className="text-lg">{place.summary}</p>
-        <Button
-          title="Book Flight"
-          onClick={() => navigate("/flight-listing")}
-        />
+        <div className="flex justify-center">
+          <Button
+            title="Book Flight"
+            onClick={() => navigate("/flight-listing")}
+          />
+        </div>
       </div>
     </section>
   );
